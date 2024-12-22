@@ -1,0 +1,156 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,sub_id,time_instructions_3_First Click,time_instructions_3_Last Click,time_instructions_3_Page Submit,time_instructions_3_Click Count,control_outcome,control_overall,outcome_robot,outcome_other,Distracting _1,Distracting _2,influence,robot_control,response_bias_3,synchrony_1,synchrony_2,synchrony_3,synchrony_4,synchrony_5,enjoy_task_1,enjoy_task_2,enjoy_task_3,enjoy_task_4,enjoy_task_5,feedback_3_2,feedback_3_4
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,Participant ID,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,"In the COMPUTER TASK, how much CONTROL do you feel you had over the outcome?","In the COMPUTER TASK, how much CONTROL did you experience overall?","In the COMPUTER TASK, to what extent was the outcome due to the robotic arm?","In the COMPUTER TASK, to what extent was the outcome due to other circumstances besides the robotic arm?","The following statements refer to the COMPUTER TASK you just completed with the robotic arm.
+
+
+
+Please read the statements carefully and choose how much you agree or disagree. - I did the task better than other participants.","The following statements refer to the COMPUTER TASK you just completed with the robotic arm.
+
+
+
+Please read the statements carefully and choose how much you agree or disagree. - I know a lot more about the robotic arm after doing the task.","In the COMPUTER TASK, how much INFLUENCE did the robotic arm have on the outcome?","In the COMPUTER TASK, how much CONTROL did the robotic arm have on the outcome?",What did you think this research was about?,"The following statements refer to the BALL MOVING TASK you completed earlier with the robotic arm.
+
+
+
+Please read the statements carefully and choose how much you agree or disagree. - The robotic arm and I were moving in synchrony.","The following statements refer to the BALL MOVING TASK you completed earlier with the robotic arm.
+
+
+
+Please read the statements carefully and choose how much you agree or disagree. - The robotic arm moved at the same pace as me.","The following statements refer to the BALL MOVING TASK you completed earlier with the robotic arm.
+
+
+
+Please read the statements carefully and choose how much you agree or disagree. - I felt in sync with the robotic arm.","The following statements refer to the BALL MOVING TASK you completed earlier with the robotic arm.
+
+
+
+Please read the statements carefully and choose how much you agree or disagree. - I felt out of sync with the robotic arm.","The following statements refer to the BALL MOVING TASK you completed earlier with the robotic arm.
+
+
+
+Please read the statements carefully and choose how much you agree or disagree. - The robotic arm was not in synchrony with me.","The following statements refer to the BALL MOVING TASK you completed earlier with the robotic arm.
+
+
+
+Please read the statements carefully and choose how much you agree or disagree. - I enjoyed completing the ball moving task with the robotic arm.","The following statements refer to the BALL MOVING TASK you completed earlier with the robotic arm.
+
+
+
+Please read the statements carefully and choose how much you agree or disagree. - Completing the ball moving task with the robotic arm was fun.","The following statements refer to the BALL MOVING TASK you completed earlier with the robotic arm.
+
+
+
+Please read the statements carefully and choose how much you agree or disagree. - Completing the ball moving task with the robotic arm was pleasant.","The following statements refer to the BALL MOVING TASK you completed earlier with the robotic arm.
+
+
+
+Please read the statements carefully and choose how much you agree or disagree. - I did not enjoy the ball moving task with the robotic arm.","The following statements refer to the BALL MOVING TASK you completed earlier with the robotic arm.
+
+
+
+Please read the statements carefully and choose how much you agree or disagree. - Completing the ball moving task with the robotic arm was unpleasant.",Please provide any thoughts about your experience interacting with the robotic arm.,Did you find yourself focusing on the robotic arm or the ball moving task?
+"{""ImportId"":""startDate"",""timeZone"":""America/Chicago""}","{""ImportId"":""endDate"",""timeZone"":""America/Chicago""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Chicago""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID10_TEXT""}","{""ImportId"":""QID11_FIRST_CLICK""}","{""ImportId"":""QID11_LAST_CLICK""}","{""ImportId"":""QID11_PAGE_SUBMIT""}","{""ImportId"":""QID11_CLICK_COUNT""}","{""ImportId"":""QID2""}","{""ImportId"":""QID3""}","{""ImportId"":""QID4""}","{""ImportId"":""QID5""}","{""ImportId"":""QID22_1""}","{""ImportId"":""QID22_5""}","{""ImportId"":""QID6""}","{""ImportId"":""QID7""}","{""ImportId"":""QID9_TEXT""}","{""ImportId"":""QID14_1""}","{""ImportId"":""QID14_2""}","{""ImportId"":""QID14_3""}","{""ImportId"":""QID14_4""}","{""ImportId"":""QID14_5""}","{""ImportId"":""QID15_1""}","{""ImportId"":""QID15_2""}","{""ImportId"":""QID15_3""}","{""ImportId"":""QID15_4""}","{""ImportId"":""QID15_5""}","{""ImportId"":""QID8_TEXT""}","{""ImportId"":""QID20""}"
+2024-09-27 10:08:09,2024-09-27 10:10:19,IP Address,72.33.2.132,100,129,True,2024-09-27 10:10:19,R_3bN93BRtTaUlT4J,,,,,43.0812,-89.3845,anonymous,EN,0,5.343,6.389,6.399,2,6,5,"Completely
+7",3,Disagree,Neutral,"Complete influence
+7","Complete control
+7",j,Somewhat disagree,Somewhat disagree,Somewhat disagree,Somewhat disagree,Somewhat disagree,Neutral,Neutral,Neutral,Neutral,Neutral,f,mostly the ball moving task
+2024-10-03 17:39:39,2024-10-03 17:47:32,IP Address,72.33.2.132,100,473,True,2024-10-03 17:47:33,R_625Zshl6CbQiy0d,,,,,43.064,-89.3965,anonymous,EN,0,34.151,34.151,34.156,1,6,4,4,4,Neutral,Neutral,4,4,IF robot is as capable as human,Somewhat agree,Somewhat disagree,Neutral,Neutral,Somewhat disagree,Neutral,Neutral,Neutral,Neutral,Neutral,The delay between the each action the robotic arm played is relatively long compared with human reaction time. And sometimes robot can not localize the ball's position very well.,mostly the robotic arm
+2024-10-04 12:53:22,2024-10-04 12:57:42,IP Address,72.33.2.132,100,259,True,2024-10-04 12:57:42,R_5r2C4lI7qusrK3C,,,,,43.064,-89.3965,anonymous,EN,98,73.204,73.204,73.213,1,5,4,5,5,Neutral,Disagree,5,5,idk,Somewhat disagree,Somewhat disagree,Neutral,Somewhat disagree,Neutral,Somewhat disagree,Neutral,Neutral,Somewhat disagree,Somewhat disagree,fasjhd,mostly the ball moving task
+2024-10-04 17:03:22,2024-10-04 17:10:38,IP Address,72.33.2.132,100,435,True,2024-10-04 17:10:38,R_5Jq4FogTqgBKveN,,,,,43.064,-89.3965,anonymous,EN,99,37.066,37.066,37.073,1,2,"No Control
+1","Completely
+7",3,Neutral,Strongly disagree,6,6,"I thought it was about the synchrony with the robot and how much that affected your trust and compassion towards it. But, since there were no more trials with differing syncs I don't know. The voice also threw me off a lot since it was not consistent, so I did not put any blame of being out of sync on the robot. I still think it could be that first idea, though, actually, now that I think about it again.",Disagree,Disagree,Disagree,Strongly agree,Agree,Agree,Agree,Agree,Strongly disagree,Strongly disagree,"I liked the arm. It seemed like it was doing its best, even though I'd imagine the code was doing most of the work. Not that different from people",both equally
+2024-10-12 12:50:19,2024-10-12 12:52:23,Survey Preview,,100,124,True,2024-10-12 12:52:24,R_1KZLr79ftw7Rj98,,,,,43.064,-89.3965,preview,EN,0,4.607,4.607,4.614,1,2,2,6,3,Somewhat disagree,Somewhat disagree,6,6,O,Agree,Agree,Agree,Disagree,Disagree,Agree,Neutral,Somewhat agree,Neutral,Somewhat disagree,,mostly the robotic arm
+2024-10-14 10:18:29,2024-10-14 10:21:54,IP Address,72.33.2.91,100,204,True,2024-10-14 10:21:54,R_3ERmpYjrHh39x8l,,,,,43.064,-89.3965,anonymous,EN,98,123.266,123.266,123.274,1,4,4,3,4,Neutral,Neutral,4,4,f,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,i,mostly the robotic arm
+2024-10-18 14:17:34,2024-10-18 15:20:02,IP Address,72.33.2.91,100,3747,True,2024-10-18 15:20:03,R_7f8a0MVAam3AnHy,,,,,43.0812,-89.3845,anonymous,EN,100,7.578,7.578,7.585,1,2,3,4,5,Neutral,Strongly disagree,3,3,How people are afraid of robotic technology they do not understand and how that can lead to emotionalizing the robot or feeling emotional in either valence,Somewhat agree,Somewhat agree,Agree,Somewhat disagree,Disagree,Somewhat agree,Somewhat agree,Somewhat agree,Neutral,Disagree,"I did not completely understand how i was interacting with the robotic arm during the computer task and did not understand that we were working on a team
+",both equally
+2024-10-28 18:38:23,2024-10-28 18:39:58,Survey Preview,,100,95,True,2024-10-28 18:39:59,R_7NN5vwfrrk6ZQqZ,,,,,43.0812,-89.3845,preview,EN,0,8.23,8.23,8.237,1,4,4,4,4,Neutral,Neutral,4,4,x,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,x,both equally
+2024-10-31 11:29:36,2024-10-31 11:31:16,Survey Preview,,100,99,True,2024-10-31 11:31:16,R_3Gp3i1xErzkHW5H,,,,,43.064,-89.3965,preview,EN,0,7.313,7.313,7.325,1,4,4,4,4,Disagree,Disagree,4,4,test,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,test,mostly the ball moving task
+2024-11-05 17:32:01,2024-11-05 17:34:36,IP Address,72.33.2.91,100,155,True,2024-11-05 17:34:37,R_5uyY2pb2vv912us,,,,,43.0812,-89.3845,anonymous,EN,23,33.328,33.328,33.332,1,"No Control
+1","No Control
+1",4,3,Disagree,Disagree,5,5,How well a robotic arm can move and if it does the correct movement,Strongly disagree,Strongly disagree,Strongly disagree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly disagree,Strongly disagree,"I would do it again, it was really fascinating",mostly the robotic arm
+2024-11-08 17:29:54,2024-11-08 17:37:20,IP Address,72.33.2.91,100,446,True,2024-11-08 17:37:20,R_7psP7V938wvck7l,,,,,43.0782,-89.4075,anonymous,EN,33,36.012,36.012,36.017,1,"No Control
+1",2,"Completely
+7","Completely
+7",Disagree,Strongly disagree,5,"No Control
+1","I think this research was about human users' level of trust in the capabilities of robotics arms, as well as how much ""fault"" we may attribute to a robotic arm as compared to outside factors. I think that the research may also try to draw correlations between the level of reliability that humans attribute to robotic arms (e.g., how much trust we had that the robotic arm would do its assigned task in the ball task) as compared to the level of trust/emotion we ourselves hold about robots (e.g., scale of ""Strongly Disagree"" to ""Strongly Agree"" about feeling uncomfortable working with a robotic arm).",Agree,Agree,Agree,Somewhat agree,Disagree,Strongly agree,Agree,Agree,Disagree,Strongly disagree,"I think it was advantageous to mirror the robotic arm's pacing with my own pacing during the ""Go, 3, 2, 1,"" countdown transitioning to the ball and to the box. I will note that I automatically assumed the robotic arm's pacing would be proportional to how much time was remaining (e.g., that it would cross 1/3 the distance to the ball between ""Go"" and ""3""). In addition, the only time I felt out of sync with the robotic arm was at moments of ""Drop,"" in which I felt that I verbally heard and responded faster than the robotic arm's coding.",mostly the robotic arm
+2024-11-12 18:08:33,2024-11-12 18:12:58,IP Address,72.33.2.91,100,264,True,2024-11-12 18:12:58,R_1n8UupED2tcPjbj,,,,,43.0782,-89.4075,anonymous,EN,13,43.199,43.199,43.201,1,"Complete Control
+7","Complete Control
+7",4,2,Neutral,Neutral,4,"No Control
+1",Seeing if robotic arms are capable of doing the same as a real arm,Somewhat agree,Somewhat disagree,Somewhat agree,Somewhat disagree,Somewhat disagree,Neutral,Agree,Neutral,Somewhat disagree,Neutral,I thought it was pretty cool seeing how a robotic arm can do similar things as a real arm,mostly the robotic arm
+2024-11-13 14:10:57,2024-11-13 14:14:54,IP Address,72.33.2.91,100,236,True,2024-11-13 14:14:54,R_5gMytI0KPuc6MrQ,,,,,43.0782,-89.4075,anonymous,EN,25,5.436,5.436,5.441,1,"No Control
+1","No Control
+1","Completely
+7",4,Neutral,Somewhat disagree,6,6,"How people would feel about the robotic arm before interacting with it and after, as well as how they would interact after certain knowledge was given to them.",Agree,Disagree,Agree,Disagree,Agree,Agree,Agree,Somewhat agree,Strongly disagree,Strongly disagree,It was cool to see how it worked and moved and I like that I know more about it now.,mostly the robotic arm
+2024-11-14 09:26:31,2024-11-14 09:30:53,IP Address,72.33.2.91,100,261,True,2024-11-14 09:30:53,R_3BkyZaj1in6Ytuy,,,,,43.0782,-89.4075,anonymous,EN,20,32.265,32.265,32.271,1,"No Control
+1","No Control
+1","Completely
+7","Completely
+7",Disagree,Disagree,"Complete influence
+7",5,testing how people think about robots in general and what they are capable of.,Disagree,Strongly disagree,Disagree,Strongly agree,Agree,Strongly agree,Strongly agree,Strongly agree,Strongly disagree,Strongly disagree,"I thought it was fun and also weird. I wondered what made the robot arm move, was it code or was it making decisions for itself?",mostly the robotic arm
+2024-11-14 17:30:16,2024-11-14 17:34:43,IP Address,72.33.2.91,100,266,True,2024-11-14 17:34:44,R_7NmiuTTFbIWt0wN,,,,,43.0782,-89.4075,anonymous,EN,6,6.977,6.977,6.982,1,3,3,"Completely
+7",5,Neutral,Somewhat agree,"Complete influence
+7",5,Study of human interaction with robotic arms,Somewhat agree,Somewhat disagree,Somewhat disagree,Somewhat agree,Somewhat agree,Agree,Agree,Strongly agree,Disagree,Strongly disagree,Completely predictable motion of the robotic arm for fixed and easy tasks,both equally
+2024-11-15 11:09:09,2024-11-15 11:14:32,IP Address,72.33.2.91,100,323,True,2024-11-15 11:14:33,R_5VNEoLJ2GJV9rOk,,,,,43.0782,-89.4075,anonymous,EN,16,24.088,24.088,24.092,1,5,4,4,3,Neutral,Somewhat agree,4,4,About the human's trust about the robotic arm and whether believe there is a potential for the robotic arm to have emotion and more influence on human beings,Somewhat disagree,Somewhat disagree,Somewhat disagree,Somewhat agree,Somewhat agree,Somewhat agree,Neutral,Somewhat agree,Disagree,Disagree,"may have a higher expectation on the task that robotic arm can do ",both equally
+2024-11-15 13:08:18,2024-11-15 13:14:16,IP Address,72.33.2.91,100,357,True,2024-11-15 13:14:17,R_7zGaIxZVENFvYKI,,,,,43.0782,-89.4075,anonymous,EN,10,6.041,6.041,6.047,1,"No Control
+1",2,"Completely
+7",4,Neutral,Disagree,5,6,I think this research might be about levels of trust people have in robotic arms.,Somewhat disagree,Disagree,Somewhat disagree,Somewhat agree,Somewhat agree,Agree,Somewhat agree,Somewhat agree,Strongly disagree,Disagree,"I was worried at times about if the robotic arm would be able to move the balls like it was meant to especially if it lagged behind my pace. I think that the more we did the less worried I got/the more I felt I could rely on it to do its job. ",mostly the robotic arm
+2024-11-19 11:56:03,2024-11-19 12:00:43,IP Address,72.33.2.91,100,279,True,2024-11-19 12:00:43,R_6GIIc2MGobvmCTr,,,,,43.0782,-89.4075,anonymous,EN,40,28.231,28.231,28.233,1,2,2,"Completely
+7",4,Disagree,Disagree,"No influence
+1",5,"I think it was about people's ability to work with and gain trust with a robotic arm so much, so they'd be willing to bet on it.",Somewhat disagree,Somewhat disagree,Somewhat disagree,Somewhat agree,Somewhat agree,Somewhat agree,Somewhat agree,Agree,Disagree,Disagree,"I thought it was interesting as I'd never interacted with a robot arm before I found it a little unnerving but overall, the robot moved well, and I found I trusted what its next movements would be.",mostly the robotic arm
+2024-11-19 18:30:25,2024-11-19 18:33:41,IP Address,72.33.2.91,100,195,True,2024-11-19 18:33:42,R_51bIvad9gVA28iQ,,,,,43.0782,-89.4075,anonymous,EN,11,4.429,4.429,4.435,1,3,3,6,4,Neutral,Neutral,5,5,Understanding how much trust people can put into robotic arms with little to no prior knowledge about them,Somewhat disagree,Somewhat disagree,Neutral,Somewhat agree,Neutral,Agree,Somewhat agree,Somewhat agree,Disagree,Somewhat disagree,"Not bad, really weird how it can move smoothly to each side with no issues",mostly the robotic arm
+2024-11-20 16:29:18,2024-11-20 16:38:46,IP Address,72.33.2.91,100,567,True,2024-11-20 16:38:47,R_7iQBhWSUbTXaKbO,,,,,43.0782,-89.4075,anonymous,EN,15,5.706,5.706,5.712,1,5,6,4,4,Disagree,Somewhat agree,6,5,"It is about how/ to what degree human can trust the robotic arm after a simple team task with the robotic arm. ",Disagree,Disagree,Disagree,Somewhat agree,Agree,Agree,Agree,Agree,Somewhat agree,Strongly disagree,"The robotic arm seems out of sync with the almost 80% time. I guess it is because I could hear the voice order in different paces while the robotic arm could not. ",both equally
+2024-11-22 13:05:29,2024-11-22 13:12:33,IP Address,72.33.2.91,100,423,True,2024-11-22 13:12:33,R_7YhvcRCshnX5wlj,,,,,43.0782,-89.4075,anonymous,EN,38,30.597,30.597,30.603,1,5,4,6,3,Neutral,Agree,5,5,"I think the research was about the relationship between human trust on the robot arm and the effectiveness/results on the task performed by the robot arm. In human beings, trust on oneself or others can promote the confidence and thus increase the effectiveness. So whether we humanize the robot arm in this situation may be important.",Somewhat agree,Somewhat disagree,Somewhat agree,Somewhat agree,Somewhat agree,Agree,Somewhat agree,Somewhat agree,Somewhat disagree,Disagree,"I think it is interesting to interact with the robotic arm in this way as teamwork. You feel that the robotic arm is a good partner to study from and collaborate with. I first feared that my ball will go into the robot's box/area, but when our balls are mixed together in the box, I really felt that we are a team to achieve the same goal.",both equally
+2024-11-25 10:58:16,2024-11-25 11:03:06,IP Address,72.33.2.91,100,289,True,2024-11-25 11:03:06,R_61crpzOfONMYezP,,,,,43.0782,-89.4075,anonymous,EN,35,4.75,4.75,4.752,1,2,3,5,4,Neutral,Neutral,5,5,"I thought this research was about elements of teamwork (trust, working towards a mutual goal) as it applies to a robot. Working in coordination is an attribute of some teams depending on the type of task. ",Somewhat agree,Somewhat agree,Somewhat agree,Agree,Agree,Strongly agree,Agree,Strongly agree,Disagree,Disagree,"When interacting with the robotic arm, I felt I tried to move in sync with it more than it tried to move in sync with me. That may be a consequence of the fact that I assume the robot had done this more than I had and there was a bit more trust for the robot than I would ascribe to myself. ",mostly the robotic arm
+2024-11-26 12:06:05,2024-11-26 12:11:36,IP Address,72.33.2.91,100,331,True,2024-11-26 12:11:36,R_1IXFe6aOiNOu4kX,,,,,43.0782,-89.4075,anonymous,EN,1,30.245,30.245,30.251,1,"No Control
+1","No Control
+1","Completely
+7","Not at all
+1",Neutral,Strongly disagree,6,"Complete control
+7","I think this research is about individuals' perceptions about a robotic arm's skills/competency. I also believe it is about individuals' level of trust regarding robot arms. I believe it may also have to do with perceptions and trust changing based on an in-person activity with a robotic arm and also a computer/digital activity. ",Agree,Agree,Strongly agree,Strongly disagree,Disagree,Neutral,Neutral,Somewhat agree,Disagree,Disagree,"I think social science research with robotics is important as industries move more and more toward using AI and robots. Researchers/we need to know more about how people can be made more comfortable with new advanced technology like robots. ",both equally
+2024-11-26 14:02:48,2024-11-26 14:05:59,IP Address,72.33.2.91,100,191,True,2024-11-26 14:05:59,R_6eVcuNKDywAnDwh,,,,,43.0782,-89.4075,anonymous,EN,32,5.291,5.291,5.297,1,3,3,5,4,Neutral,Neutral,5,4,How people perceive robotic arms,Somewhat agree,Neutral,Somewhat agree,Somewhat disagree,Somewhat disagree,Strongly agree,Strongly agree,Somewhat agree,Strongly disagree,Strongly disagree,Interesting experience. Technology has come a long way.,mostly the robotic arm
+2024-11-26 18:04:39,2024-11-26 18:09:47,IP Address,72.33.2.91,100,307,True,2024-11-26 18:09:47,R_1Mq4mpg8cppvhAt,,,,,43.0812,-89.3845,anonymous,EN,37,6.675,6.675,6.677,1,"No Control
+1","No Control
+1","Not at all
+1",2,Neutral,Somewhat disagree,2,2,"Reliability on robotic arm, test about how much a participant could rely on a robot",Somewhat disagree,Somewhat disagree,Somewhat disagree,Somewhat disagree,Agree,Neutral,Neutral,Neutral,Neutral,Neutral,The robotic arm feels like a distraction for me while im moving the balls. Also it feels difficult to reach far left balls,mostly the robotic arm
+2024-12-02 17:59:57,2024-12-02 18:05:10,IP Address,72.33.2.91,100,313,True,2024-12-02 18:05:11,R_5T6pc5KpVSmATXH,,,,,43.0812,-89.3845,anonymous,EN,36,36.726,36.726,36.731,1,2,2,"Completely
+7",3,Somewhat agree,Agree,6,5,Reliability and trust on robotic arms on certain tasks performed by them,Strongly agree,Strongly agree,Agree,Disagree,Strongly disagree,Agree,Strongly agree,Agree,Strongly disagree,Disagree,I liked the ball moving task where the robotic arm and I were working synchronously to achieve the same goal however in the computer task the robotic arm performed the tasks alone and therefore it wasn't as pleasant.,mostly the robotic arm
+2024-12-03 17:58:03,2024-12-03 18:00:52,IP Address,72.33.2.91,100,168,True,2024-12-03 18:00:53,R_5EbB6S7jSMOarmz,,,,,43.0812,-89.3845,anonymous,EN,43,7.836,7.836,7.839,1,"No Control
+1","No Control
+1","Completely
+7",2,Disagree,Disagree,4,"Complete control
+7",Human reliance and trust in robotic technology.,Disagree,Disagree,Somewhat disagree,Agree,Agree,Neutral,Somewhat disagree,Neutral,Somewhat disagree,Somewhat disagree,It was pretty cool seeing it move!,mostly the robotic arm
+2024-12-06 12:59:46,2024-12-06 13:05:57,IP Address,72.33.2.91,100,371,True,2024-12-06 13:05:58,R_6sU7yehGuLbQbRP,,,,,43.0812,-89.3845,anonymous,EN,39,29.221,29.221,29.226,1,5,4,"Completely
+7",2,Neutral,Agree,"Complete influence
+7","Complete control
+7","If we think we are helping the robot win, we're more likely to put our trust in them, but if the robot starts losing then we will lose trust in them.",Agree,Agree,Strongly agree,Strongly disagree,Strongly disagree,Agree,Agree,Agree,Strongly disagree,Strongly disagree,"I felt like I was going too fast at some points so I started slowing down to stay at the robots pace. I felt, working as a team, I had more control over my pace and so I made more effort to stay at the robots pace than it should have to make to speed up to match me.",both equally
+2024-12-09 16:03:10,2024-12-09 16:09:50,IP Address,72.33.2.91,100,400,True,2024-12-09 16:09:51,R_1cwNUe474PT3HMg,,,,,43.0812,-89.3845,anonymous,EN,18,26.951,26.951,26.957,1,"No Control
+1",2,4,3,Neutral,Strongly disagree,"No influence
+1",2,acceptance of and emotions robotic arms via reliability,Disagree,Disagree,Disagree,Strongly agree,Strongly agree,Agree,Agree,Somewhat agree,Disagree,Disagree,"I felt so bad when I dropped the ball before the instructions told me to do so as I dropped it when the robotic arm dropped its ball. I carried on with the task but it made me think about if the task was specifically timed for an event to happen, I would have failed as I watched the arm and synched it up with its movement.",both equally
+2024-12-10 12:08:44,2024-12-10 12:13:03,IP Address,72.33.2.91,100,259,True,2024-12-10 12:13:04,R_1IfJTDLAGyen0ht,,,,,43.0812,-89.3845,anonymous,EN,7,38.997,38.997,39.002,1,4,3,"Completely
+7",4,Somewhat agree,Somewhat agree,"Complete influence
+7","Complete control
+7","Overall human confidence in the robotic arm itself, as well as the success and failure of the arm on a given task based on the prediction of the outcome by the human involved. ",Strongly agree,Agree,Agree,Disagree,Disagree,Agree,Somewhat agree,Somewhat agree,Disagree,Disagree,"It helped me to slow/speed up my movements based on where the robotic arm was at in a given step. I also personally felt like it was slowing down and speeding up between steps but I could be completely wrong in that aspect. ",mostly the robotic arm
+2024-12-10 14:10:45,2024-12-10 14:15:23,IP Address,72.33.2.91,100,277,True,2024-12-10 14:15:23,R_7ygh3ItndVzII0E,,,,,43.0812,-89.3845,anonymous,EN,65,5.774,5.774,5.779,1,"No Control
+1",2,5,5,Strongly disagree,Agree,5,4,Capability to work with robotic arms? Effect of financial incentives on level of trust?,Somewhat disagree,Somewhat disagree,Somewhat agree,Somewhat agree,Somewhat agree,Strongly agree,Strongly agree,Strongly agree,Strongly disagree,Strongly disagree,It was weird and new but fun. I would be down to more interactions like these.,both equally
+2024-12-10 18:00:29,2024-12-10 18:04:23,IP Address,72.33.2.91,100,233,True,2024-12-10 18:04:23,R_3M6vzYXaBYB6yZa,,,,,43.0812,-89.3845,anonymous,EN,42,5.679,5.679,5.681,1,"No Control
+1","No Control
+1","Completely
+7","Not at all
+1",Disagree,Strongly disagree,"Complete influence
+7",6,"Trust in robotics, importance of robotics and their development, what society thinks of robotic arms/limbs, how humans respond to robotic arms",Somewhat disagree,Disagree,Somewhat agree,Somewhat agree,Agree,Strongly agree,Strongly agree,Strongly agree,Strongly disagree,Strongly disagree,"I caught myself speeding up to move at the same speed at the robotic arm, I found it easy to not look at the task myself since the arm was doing the same thing, I didn't feel connected to the arm such as that I don't think it was following me but only what it was pre-programed to do",mostly the robotic arm
+2024-12-11 16:42:29,2024-12-11 16:51:25,IP Address,72.33.2.91,100,535,True,2024-12-11 16:51:26,R_7suuAInSv755fhL,,,,,43.0812,-89.3845,anonymous,EN,4,13.013,13.013,13.017,1,5,5,4,5,Agree,Agree,5,3,Human-Robot Interaction. Maybe involved with some robot learning and psychology. Psychology is also an important part of it.,Disagree,Disagree,Disagree,Agree,Agree,Somewhat agree,Somewhat agree,Somewhat agree,Somewhat disagree,Somewhat disagree,Interesting experience. I would love to do some related research in the future.,mostly the robotic arm
+2024-12-13 13:03:44,2024-12-13 13:08:20,IP Address,72.33.2.91,100,276,True,2024-12-13 13:08:21,R_3P1F2zZTrh8xTW2,,,,,43.0812,-89.3845,anonymous,EN,60,29.999,29.999,30.003,1,2,4,4,3,Somewhat agree,Somewhat agree,5,4,I thought this research was about the compatibility and functionality of robotic arms with individuals.,Agree,Agree,Agree,Disagree,Disagree,Strongly agree,Strongly agree,Agree,Strongly disagree,Disagree,It was a fun experience interacting with the robotic arm. I thought it was a good experience overall.,mostly the robotic arm
+2024-12-16 13:31:24,2024-12-16 13:36:31,IP Address,72.33.2.91,100,306,True,2024-12-16 13:36:31,R_3p3gooq2IPJ0wyc,,,,,43.0812,-89.3845,anonymous,EN,45,25.988,25.988,25.992,1,"No Control
+1",3,4,4,Neutral,Disagree,5,"No Control
+1","Whether or not people view robots are tools or teammates. ",Somewhat disagree,Somewhat disagree,Somewhat disagree,Somewhat agree,Somewhat agree,Strongly agree,Strongly agree,Somewhat agree,Strongly disagree,Disagree,"I thought it was fun to watch as the robot moves the ball to a different rhythm than me and I was wondering the whole time what did its sound cues sound like. Although after a while my arm started to hurt a bit and I was thinking about how robots don't have to worry about that when doing tasks. ",both equally
+2024-12-16 15:56:45,2024-12-16 16:05:00,IP Address,72.33.2.91,100,495,True,2024-12-16 16:05:01,R_1CJtQiJRrPeB8ab,,,,,43.0812,-89.3845,anonymous,EN,46,4.418,4.418,4.422,1,"No Control
+1","No Control
+1","Completely
+7",2,Somewhat agree,Agree,"Complete influence
+7","Complete control
+7","I think this research was gauging human trust in the robotic arm's ability to complete a variety of tasks, ranging from easy to hard. As long as programmed appropriately, I feel the robotic arm would succeed in these tasks on a regular basis. ",Somewhat disagree,Somewhat disagree,Somewhat disagree,Somewhat agree,Somewhat agree,Neutral,Neutral,Neutral,Disagree,Somewhat disagree,"I felt as if I was turning into a robot because I had to wait for the same commands as the robotic arm. I'm not sure why, but my instinct was to stiffen up and move in a less ""human-like"" way. This changed as the activity with the arm went on and I felt more comfortable, but it was weird at first. ",mostly the robotic arm
+2024-12-16 17:59:46,2024-12-16 18:03:22,IP Address,72.33.2.91,100,215,True,2024-12-16 18:03:22,R_71RDAflUkiVkedh,,,,,43.0812,-89.3845,anonymous,EN,58,7.79,7.79,7.792,1,"No Control
+1","No Control
+1","Completely
+7",3,Neutral,Disagree,6,6,How humans interact with and perceive robotic arms,Agree,Agree,Agree,Disagree,Agree,Somewhat agree,Somewhat disagree,Somewhat agree,Somewhat disagree,Disagree,,mostly the robotic arm
+2024-12-18 10:27:35,2024-12-18 10:31:55,IP Address,72.33.2.91,100,259,True,2024-12-18 10:31:56,R_72a3ykTYr4enj1J,,,,,43.0782,-89.4075,anonymous,EN,55,26.906,26.906,26.911,1,2,"No Control
+1",3,6,Neutral,Disagree,3,2,"I think it was about our experience with the robotic arm and how much do we trust it to perform well. Since the robot performed really well in the easy task, I assumed it would do well in all other easy tasks and slightly worse in the medium/hard ones. I think the research is more related to our thoughts, trust and experiences as participants rather than just the ability of the arm.",Neutral,Somewhat disagree,Somewhat disagree,Somewhat agree,Somewhat agree,Agree,Agree,Agree,Disagree,Strongly disagree,I had fun interacting with the robotic arm. It was easy to follow the movements although it made me feel a bit strange when it was moving faster or slower than me. I thought that we would be more in sync.,both equally
