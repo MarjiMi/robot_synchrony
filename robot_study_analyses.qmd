@@ -1,7 +1,7 @@
 ---
 title: 'Robot Study Data Cleaning'
 author: "Michelle Marji, Siddharth Suresh, Megh Doshi"
-date: "2025-3-3"
+date: "2025-3-9"
 format: 
   html: 
     embed-resources: true
@@ -31,6 +31,9 @@ library(effects)
 library(MASS)
 library(lm.beta)
 library(janitor)
+library(broom)
+library(knitr)
+library(rvest)
 
 # Function
 get_peta2 = function(lmer_model, focal_predictor) {
@@ -690,6 +693,8 @@ d1 |>
 d1 <- d1 |> mutate(age = as.numeric(age))
 describe(d1$age)
 
+d1 <- d1 |>
+  mutate(gators_diff = gators_2 - gators_1)
 ```
 
 # Descriptives - trust survey 1
@@ -738,180 +743,266 @@ describeBy(dc$trust_game_h_f, dc$condition) # hard, fail
 
 # Regression Tests - trust survey 1
 ```{r}
-d1 <- d1 |>
-  mutate(gators_diff = gators_2 - gators_1)
-m0 <- lm(gators_diff ~ condition, data = d1)
-summary(m0)
-m0.1 <- lm(gators_diff ~ 1, data = d1)
-summary(m0.1)
+m1 <- lm(gators_diff ~ condition, data = d1)
+summary(m1)
+m2 <- lm(gators_diff ~ 1, data = d1)
+summary(m2)
 
 # Filter the data to include only the control group (condition = 0)
 control_data <- d1 |>
   filter(condition == 0)
-m0.2 <- lm(gators_diff ~ 1, data = control_data)
-summary(m0.2)
+m3 <- lm(gators_diff ~ 1, data = control_data)
+summary(m3)
 
 exp_data <- d1 |>
   filter(condition == 1)
-m0.3 <- lm(gators_diff ~ 1, data = exp_data)
-summary(m0.3)
+m4 <- lm(gators_diff ~ 1, data = exp_data)
+summary(m4)
 
 
 # regression tests (trust survey 1 confirm no sig differences b/w conditions
-m1 = lm(gators_1 ~ condition, data = d1)
-summary(m1)
-Anova(m1, type = 3, test = "F")
+m5 = lm(gators_1 ~ condition, data = d1)
+summary(m5)
+Anova(m5, type = 3, test = "F")
 
-m2 = lm(trust_tech_1 ~ condition, data = d1)
-summary(m2)
-Anova(m2, type = 3, test = "F")
+m6 = lm(trust_tech_1 ~ condition, data = d1)
+summary(m6)
+Anova(m6, type = 3, test = "F")
 
-m3 = lm(risk_1 ~ condition, data = d1)
-summary(m3)
-Anova(m3, type = 3, test = "F")
+m7 = lm(risk_1 ~ condition, data = d1)
+summary(m7)
+Anova(m7, type = 3, test = "F")
 
-m4 = lm(confidence_1 ~ condition, data = d1)
-summary(m4)
-Anova(m4, type = 3, test = "F")
+m8 = lm(confidence_1 ~ condition, data = d1)
+summary(m8)
+Anova(m8, type = 3, test = "F")
 ```
 
 # Regression Tests - trust survey 2
 ```{r}
-m5 = lm(gators_2 ~ condition, data = d2)
-summary(m5)
-Anova(m5, type = 3, test = "F")
-
-m6 = lm(toast ~ condition, data = d2)
-summary(m6)
-Anova(m6, type = 3, test = "F")
-
-m7 = lm(mdmt ~ condition, data = d2)
-summary(m7)
-Anova(m7, type = 3, test = "F")
-
-m8 = lm(rosas ~ condition, data = d2)
-summary(m8)
-Anova(m8, type = 3, test = "F")
-
-m9 = lm(intention ~ condition, data = d2)
+m9 = lm(gators_2 ~ condition, data = d2)
 summary(m9)
 Anova(m9, type = 3, test = "F")
 
-m10 = lm(self_efficacy ~ condition, data = d2)
+m10 = lm(toast ~ condition, data = d2)
 summary(m10)
 Anova(m10, type = 3, test = "F")
 
-m11 = lm(fluency ~ condition, data = d2)
+m11 = lm(mdmt ~ condition, data = d2)
 summary(m11)
 Anova(m11, type = 3, test = "F")
 
-m12 = lm(behavioral_trust ~ condition, data = d2)
+m12 = lm(rosas ~ condition, data = d2)
 summary(m12)
 Anova(m12, type = 3, test = "F")
 
-m13 = lm(mind ~ condition, data = d2)
+m13 = lm(intention ~ condition, data = d2)
 summary(m13)
 Anova(m13, type = 3, test = "F")
 
-# robot behaves as if own beliefs and desires
-m14 = lm(mind ~ condition, data = d2)
+m14 = lm(self_efficacy ~ condition, data = d2)
 summary(m14)
 Anova(m14, type = 3, test = "F")
+
+m15 = lm(fluency ~ condition, data = d2)
+summary(m15)
+Anova(m15, type = 3, test = "F")
+
+m16 = lm(behavioral_trust ~ condition, data = d2)
+summary(m16)
+Anova(m16, type = 3, test = "F")
+
+# robot behaves as if own beliefs and desires
+m17 = lm(mind ~ condition, data = d2)
+summary(m17)
+Anova(m17, type = 3, test = "F")
 ```
 
 
 # Regression Tests - trust survey 3
 ```{r}
-m13 = lm(synchrony ~ condition, data = d3)
-summary(m13) # significant
-Anova(m13, type = 3, test = "F")
-
-m14 = lm(enjoy_task ~ condition, data = d3)
-summary(m14)
-Anova(m14, type = 3, test = "F")
-
-m15 = lm(control_outcome ~ condition, data = d3)
-summary(m15)
-Anova(m15, type = 3, test = "F")
-
-m16 = lm(control_overall ~ condition, data = d3)
-summary(m16)
-Anova(m16, type = 3, test = "F")
-
-d3$outcome_robot_num <- as.numeric(d3$outcome_robot)
-describeBy(d3$outcome_robot_num, d3$condition)
-m17 = lm(outcome_robot ~ condition, data = d3)
-summary(m17)
-Anova(m17, type = 3, test = "F")
-
-m18 = lm(outcome_other ~ condition, data = d3)
-summary(m18)
+m18 = lm(synchrony ~ condition, data = d3)
+summary(m18) # significant
 Anova(m18, type = 3, test = "F")
 
-d3$influence_num <- as.numeric(d3$influence)
-describeBy(d3$influence_num, d3$condition)
-m19 = lm(influence ~ condition, data = d3)
+m19 = lm(enjoy_task ~ condition, data = d3)
 summary(m19)
 Anova(m19, type = 3, test = "F")
 
-m20 = lm(robot_control ~ condition, data = d3)
+m20 = lm(control_outcome ~ condition, data = d3)
 summary(m20)
 Anova(m20, type = 3, test = "F")
+
+m21 = lm(control_overall ~ condition, data = d3)
+summary(m21)
+Anova(m21, type = 3, test = "F")
+
+d3$outcome_robot_num <- as.numeric(d3$outcome_robot)
+describeBy(d3$outcome_robot_num, d3$condition)
+m22 = lm(outcome_robot ~ condition, data = d3)
+summary(m22)
+Anova(m22, type = 3, test = "F")
+
+m23 = lm(outcome_other ~ condition, data = d3)
+summary(m23)
+Anova(m23, type = 3, test = "F")
+
+d3$influence_num <- as.numeric(d3$influence)
+describeBy(d3$influence_num, d3$condition)
+m24 = lm(influence ~ condition, data = d3)
+summary(m24)
+Anova(m24, type = 3, test = "F")
+
+m25 = lm(robot_control ~ condition, data = d3)
+summary(m25)
+Anova(m25, type = 3, test = "F")
 ```
 
 
 # Regression Tests - trust computer task
 ```{r}
 # regression test (trust game by condition)
-m1 = lm(trust_game ~ condition, data = dc)
-summary(m1)
-Anova(m1, type = 3, test = "F")
+m26 = lm(trust_game ~ condition, data = dc)
+summary(m26)
+Anova(m26, type = 3, test = "F")
 
 # regression test (trust game (easy, no info), by condition)
-m2 = lm(trust_game_e_n ~ condition, data = dc)
-summary(m2)
-Anova(m2, type = 3, test = "F")
+m27 = lm(trust_game_e_n ~ condition, data = dc)
+summary(m27)
+Anova(m27, type = 3, test = "F")
 
 
 # regression test (trust game (medium, no info), by condition)
-m3 = lm(trust_game_m_n ~ condition, data = dc)
-summary(m3)
-Anova(m3, type = 3, test = "F")
+m28 = lm(trust_game_m_n ~ condition, data = dc)
+summary(m28)
+Anova(m28, type = 3, test = "F")
 
 # regression test (trust game (hard, no info), by condition)
-m4 = lm(trust_game_h_n ~ condition, data = dc)
-summary(m4)
-Anova(m4, type = 3, test = "F")
+m29 = lm(trust_game_h_n ~ condition, data = dc)
+summary(m29)
+Anova(m29, type = 3, test = "F")
 
 # regression test (trust game (easy, success), by condition)
-m5 = lm(trust_game_e_s ~ condition, data = dc)
-summary(m5)
-Anova(m5, type = 3, test = "F")
+m30 = lm(trust_game_e_s ~ condition, data = dc)
+summary(m30)
+Anova(m30, type = 3, test = "F")
 
 # regression test (trust game (medium, success), by condition)
-m6 = lm(trust_game_m_s ~ condition, data = dc)
-summary(m6)
-Anova(m6, type = 3, test = "F")
+m31 = lm(trust_game_m_s ~ condition, data = dc)
+summary(m31)
+Anova(m31, type = 3, test = "F")
 
 # regression test (trust game (hard, success), by condition)
-m7 = lm(trust_game_h_s ~ condition, data = dc)
-summary(m7)
-Anova(m7, type = 3, test = "F")
+m32 = lm(trust_game_h_s ~ condition, data = dc)
+summary(m32)
+Anova(m32, type = 3, test = "F")
 
 # regression test (trust game (easy, fail), by condition)
-m8 = lm(trust_game_e_f ~ condition, data = dc)
-summary(m8)
-Anova(m8, type = 3, test = "F")
+m33 = lm(trust_game_e_f ~ condition, data = dc)
+summary(m33)
+Anova(m33, type = 3, test = "F")
 
 # regression test (trust game (medium, fail), by condition)
-m9 = lm(trust_game_m_f ~ condition, data = dc)
-summary(m9)
-Anova(m9, type = 3, test = "F")
+m34 = lm(trust_game_m_f ~ condition, data = dc)
+summary(m34)
+Anova(m34, type = 3, test = "F")
 
 # regression test (trust game (hard, fail), by condition)
-m10 = lm(trust_game_h_f ~ condition, data = dc)
-summary(m10)
-Anova(m10, type = 3, test = "F")
+m35 = lm(trust_game_h_f ~ condition, data = dc)
+summary(m35)
+Anova(m35, type = 3, test = "F")
+```
+
+
+### Results Table
+```{r}
+# List of models
+models <- paste0("m", 1:35)
+
+# Function to extract the second estimate and model names
+extract_est <- function(model_name) {
+  model <- get(model_name)
+  coefs <- tidy(model)
+  if (nrow(coefs) > 1) {
+    second_estimate <- coefs %>% filter(term != "(Intercept)") %>% slice(1)
+  } else {
+    second_estimate <- coefs %>% slice(1)
+  }
+  second_estimate$model <- model_name
+  return(second_estimate)
+}
+
+# Corresponding row names for the table
+row_names <- c("GAToRS_diff ~ condition",
+               "GAToRS_diff ~ all_participants",
+               "GAToRS_diff ~ control_group",
+               "GAToRS_diff ~ experimental_group",
+               "pre_GAToRS ~ condition",
+               "pre_trust_in_tech ~ condition",
+               "pre_risk ~ condition",
+               "pre_confidence ~ condition",
+               "post_GAToRS ~ condition",
+               "TOAST ~ condition",
+               "MDMT ~ condition",
+               "ROSAS ~ condition",
+               "robot_intention ~ condition",
+               "robot_self_efficacy ~ condition",
+               "team_fluency ~ condition",
+               "behavioral_trust ~ condition",
+               "robot_mind ~ condition",
+               "synchrony ~ condition",
+               "enjoy_task ~ condition",
+               "control_outcome ~ condition",
+               "control_overall ~ condition",
+               "outcome_robot ~ condition",
+               "outcome_other ~ condition",
+               "robot_influence ~ condition",
+               "robot_control ~ condition",
+               "trust_task ~ condition",
+               "trust_task_easy ~ condition",
+               "trust_task_medium ~ condition",
+               "trust_task_hard ~ condition",
+               "trust_task_easy_success ~ condition",
+               "trust_task_medium_success ~ condition",
+               "trust_task_hard_success ~ condition",
+               "trust_task_easy_fail ~ condition",
+               "trust_task_medium_fail ~ condition",
+               "trust_task_hard_fail ~ condition")
+
+# Extract results for all models
+all_estimates <- bind_rows(lapply(models, extract_est))
+
+# Rename columns for publication
+colnames(all_estimates) <- c("Model", "Estimate", "Std. Error", "t-value", "p-value")
+
+# Update the model names in the table
+all_estimates$Model <- row_names
+
+# Format the table for publication
+table <- all_estimates %>%
+  dplyr::select(Model, Estimate, `Std. Error`, `t-value`, `p-value`) %>%
+  mutate(`p-value` = case_when(
+    `p-value` < 0.001 ~ paste0(formatC(`p-value`, format = "f", digits = 4), "***"),
+    `p-value` < 0.01 ~ paste0(formatC(`p-value`, format = "f", digits = 4), "**"),
+    `p-value` < 0.05 ~ paste0(formatC(`p-value`, format = "f", digits = 4), "*"),
+    TRUE ~ formatC(`p-value`, format = "f", digits = 3)
+  )) %>%
+  kable("html", caption = "Regression Coefficients") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+
+# Print the formatted table
+print(table)
+
+# Convert the HTML table to a data frame
+html_table <- as.character(table)
+df <- html_table %>%
+  read_html() %>%
+  html_table(fill = TRUE) %>%
+  .[[1]]
+
+# Export the table to CSV
+write.csv(df, "regression_coefficients.csv")
+
 ```
 
 
