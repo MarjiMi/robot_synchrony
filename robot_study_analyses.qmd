@@ -151,6 +151,14 @@ d3 <- d3 |> dplyr::select(-status, -ip_address, -progress, -finished, -recorded_
 
 d4 <- d4 |> dplyr::select(-status, -ip_address, -progress, -finished, -recorded_date, -response_id, -recipient_last_name, -recipient_first_name, -recipient_email, -external_reference, -location_latitude, -location_longitude, -distribution_channel, -user_language)
 
+
+# Change variable names robot computer game data
+new_names <- c("sub_id", "game_1_e",	"game_2_m",	"game_3_h",	"game_4_e",	"game_5_m",	"game_6_h",	"game_7_e",	"game_8_m",	"game_9_h_success",	"game_10_e", "game_11_m",	"game_12_h",	"game_13_e",	"game_14_m",	"game_15_h",	"game_16_e",	"game_17_m",	"game_18_h_fail",	"game_19_e",	"game_20_m",	"game_21_h",	"game_22_e",	"game_23_m",	"game_24_h",	"game_25_e",	"game_26_m",	"game_27_h",	"game_28_e",	"game_29_m",	"game_30_h")  
+
+# Rename the variables
+dc <- dc |>
+  set_names(new_names)
+
 # Add condition variable
 group_0 <- c(4, 10, 11, 15, 18, 20, 23, 36, 37, 40, 43, 45, 55, 65)
 group_1 <- c(1, 6, 7, 13, 16, 25, 32, 33, 35, 38, 39, 42, 46, 58, 60)
@@ -171,12 +179,7 @@ dc <- dc |>
   mutate(condition = ifelse(sub_id %in% group_0, 0, 
                            ifelse(sub_id %in% group_1, 1, NA)))
 
-# Change variable names robot computer game data
-new_names <- c("sub_id", "game_1_e",	"game_2_m",	"game_3_h",	"game_4_e",	"game_5_m",	"game_6_h",	"game_7_e",	"game_8_m",	"game_9_h_success",	"game_10_e", "game_11_m",	"game_12_h",	"game_13_e",	"game_14_m",	"game_15_h",	"game_16_e",	"game_17_m",	"game_18_h_fail",	"game_19_e",	"game_20_m",	"game_21_h",	"game_22_e",	"game_23_m",	"game_24_h",	"game_25_e",	"game_26_m",	"game_27_h",	"game_28_e",	"game_29_m",	"game_30_h")  
 
-# Rename the variables
-dc <- dc |>
-  set_names(new_names)
 
 # Remove participants who did not do in person session
 d1 <- d1 |>
@@ -616,6 +619,7 @@ dc$trust_game <- rowMeans(trust_game, na.rm = T)
 ```
 
 
+
 # Descriptives - demographics
 ```{r}
 # race
@@ -650,6 +654,23 @@ describeBy(d1$trust_tech_1, d1$condition)
 describeBy(d1$risk_1, d1$condition) 
 describeBy(d1$confidence_1, d1$condition) 
 ```
+
+# Decriptive - trust surved 2 - survey 1
+
+```{r}
+mGators = lm(diffGators ~ condition, data = d1)
+summary(mGators)
+Anova(mGators, type = 3, test = "F")
+
+
+write.csv(d1, "d1_for_python.csv", row.names = FALSE)
+write.csv(d4, "d4_for_python.csv", row.names = FALSE)
+write.csv(dc, "dc_for_python.csv", row.names = FALSE)
+write.csv(d2, "d2_for_python.csv", row.names = FALSE)
+write.csv(d3, "d3_for_python.csv", row.names = FALSE)
+
+```
+
 
 
 # Descriptives - trust survey 2
